@@ -12,7 +12,7 @@ def get_imdb_top50(year):
         print(f"No movies are recorded in the year {year} yet!")
         return
 
-    # Create the output file
+    # Create the output file fd
     output_file_path = os.path.join(dataset_location, f"IMDB_Top50_{year}.txt")
 
     with open(output_file_path, 'w+') as output_file:
